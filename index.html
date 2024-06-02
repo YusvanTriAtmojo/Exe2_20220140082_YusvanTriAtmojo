@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PokeWeb - Beranda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+</head>
+<body>
+  <div id="viewport">
+    <div id="sidebar">
+      <header>
+        <p>PokeWeb</p>
+      </header>
+      <ul class="nav">
+        <li id="menu-beranda" class="active">
+          <a href="index.html">
+            <i class="zmdi zmdi-home"></i> BERANDA
+          </a>
+        </li>
+        <li id="menu-pokedex">
+          <a href="pokedex.html">
+            <i class="zmdi zmdi-view-dashboard"></i> POKEDEX
+          </a>
+        </li>
+        <li id="menu-form">
+          <a href="form.html">
+            <i class="zmdi zmdi-favorite"></i> JOIN MEMBER
+          </a>
+        </li>
+        <li id="menu-guide">
+          <a href="guide.html">
+            <i class="zmdi zmdi-link"></i> BATTLE GUIDE
+          </a>
+        </li>
+        <li id="menu-form">
+          <a href="kartun-game.html">
+            <i class="zmdi zmdi-notifications"></i> KARTUN - GAME
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="content">
+      <div class="container-fluid">
+        <div id="content-beranda" class="content-section active">
+            <h1>POKEMON</h1>
+            <div class="container2">
+              <div class="section1">
+                  <div class="image">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png" alt="Pokeball" width="100px" height="100px">
+                  </div>
+                  <div class="text">
+                      <p align="justify">Pokémon adalah makhluk misterius dengan banyak rahasia. Beberapa Pokémon tinggal bersama manusia dan beberapa tinggal di alam bebas di padang rumput, gua, atau laut, tapi banyak hal tentang ekologi mereka yang masih belum diketahui. 
+                          Salah satu fitur utama mereka adalah bahwa mereka dapat ditangkap menggunakan Poké Ball, yang memungkinkan mereka dibawa-bawa.</p>
+                  </div>
+              </div>
+              <p align="justify">Sebenarnya, berapa banyak jenis Pokemon yang ada? Jumlah pastinya tidak diketahui. Sementara ini ada lebih dari 1000 jenis Pokémon yang telah dikonfirmasi, dan Pokémon yang belum pernah terlihat pasti akan ditemukan di masa depan.</p>
+              <div class="section2">
+                  <div class="image1">
+                  <img src="https://id.portal-pokemon.com/img/pokemon-about/img_pokemon01.jpg" alt="Bulbasaur" width="150px" height="150px">
+                  </div>
+                  <div class="image2">
+                  <img src="https://id.portal-pokemon.com/img/pokemon-about/img_pokemon02.jpg" alt="Charmander" width="150px" height="150px">
+                  </div>
+                  <div class="image3">
+                  <img src="https://id.portal-pokemon.com/img/pokemon-about/img_pokemon03.jpg" alt="Squirtle" width="150px" height="150px">
+                  </div>
+              </div>
+              <button type="button" onclick="showAlert()">KLIK ⭐️</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

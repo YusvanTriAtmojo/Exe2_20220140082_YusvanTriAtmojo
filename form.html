@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>PokeWeb - Member</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+  <div id="viewport">
+    <div id="sidebar">
+      <header>
+        <p>PokeWeb</p>
+      </header>
+      <ul class="nav">
+        <li id="menu-beranda">
+          <a href="index.html">
+            <i class="zmdi zmdi-home"></i> BERANDA
+          </a>
+        </li>
+        <li id="menu-pokedex">
+          <a href="pokedex.html">
+            <i class="zmdi zmdi-view-dashboard"></i> POKEDEX
+          </a>
+        </li>
+        <li id="menu-form" class="active">
+          <a href="form.html">
+            <i class="zmdi zmdi-favorite"></i> JOIN MEMBER
+          </a>
+        </li>
+        <li id="menu-guide">
+          <a href="guide.html">
+            <i class="zmdi zmdi-link"></i> BATTLE GUIDE
+          </a>
+        </li>
+        <li id="menu-form">
+          <a href="kartun-game.html">
+            <i class="zmdi zmdi-notifications"></i> KARTUN - GAME
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="content">
+      <div class="container-fluid">
+        <div id="content-form" class="content-section active">
+          <div class="header">
+          <h1>PENDAFTARAN MEMBER</h1>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png" alt="Pokeball" width="60px" height="60px">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png" alt="Pokeball" width="60px" height="60px">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png" alt="Pokeball" width="60px" height="60px"><br><br>
+          </div>
+          <div class="pokedex">
+            <form action="">
+              <div class="pokemon">
+                <div class="info">
+                  <label for="nama" style="font-weight:bold;">Nama Anda</label><br>
+                  <input type="text" placeholder="Nama Anda" id="nama"><br><br>
+                  <p><b>Jenis Kelamin : </b><br>
+                    <input type="radio" name="jk" value="Laki-laki" checked />
+                    Laki-laki <input type="radio" name="jk" value="Perempuan" />
+                    Perempuan <br><br>
+                    <label for="tanggal" style="font-weight: bold;">Tanggal Lahir</label><br>
+                    <input type="text" id="tanggal" readonly><br>
+                  <p><b>Pokemon Favorit</b></p>
+                  <p>
+                    <select id="pokemon-favorit">
+                        <option>Pikachu</option>
+                        <option>Charizard</option>
+                        <option>Squirtle</option>
+                        <option>Bulbasaur</option>
+                        <option>Togepi</option>
+                        <option>Caterpie</option>
+                        <option>Mewtwo</option>
+                        <option>Kyurem</option>
+                        <option>Greninja</option>
+                        <option>Reshiram</option>
+                        <option>Zoroark</option>
+                        <option>Volcarona</option>
+                    </select>
+                </p>
+                  <label for="alasan" style="font-weight: bold;">Alasan Menyukai Pokemon</label><br>
+                  <textarea placeholder="Alasan Anda menyukai Pokemon" id="alasan" cols="30" rows="5"></textarea><br><br>
+
+                  <button type="submit" onclick="kirimdata()">DAFTAR</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="script.js"></script>
+  <script src="form.js"></script>
+</body>
+</html>
